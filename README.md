@@ -45,6 +45,7 @@ hdb_etl/
 │   └── utils.py
 ├── main.py
 └── README.md
+
 🔄 Pipeline Flow
 Raw → Combined → Validated → Cleaned → Transformed → Hashed → Anomalies
 🚀 How to Run
@@ -56,7 +57,7 @@ python main.py
 
 Open:
 
-notebooks/HDB_ETL_Jupyter.ipynb
+notebooks/hdb_pipeline.ipynb
 
 Execute cells sequentially.
 
@@ -153,3 +154,4 @@ Designed with production best practices
 
 Vijayaelakya
 HDB Senior Data Engineer Technical Assessment
+
