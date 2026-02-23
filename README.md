@@ -1,26 +1,27 @@
-This project implements a production-style ETL pipeline to process HDB resale flat prices data from January 2012 to December 2016, sourced from data.gov.sg.
+# 🏠 HDB Resale Flat Prices ETL Pipeline
+
+## 📌 Overview
+This project implements a **production-style ETL pipeline** to process HDB resale flat prices data from **January 2012 to December 2016**, sourced from data.gov.sg.
 
 The pipeline is designed to be:
+- Modular  
+- Config-driven  
+- Idempotent  
+- Scalable  
 
-Modular
+---
 
-Config-driven
+## ⚙️ Tech Stack
+- Python (Pandas, Requests)  
+- YAML (Configuration)  
+- Jupyter Notebook (Demonstration)  
+- VS Code (Development)  
 
-Idempotent
+---
 
-Scalable
+## 📁 Project Structure
 
-⚙️ Tech Stack
-
-Python (Pandas, Requests)
-
-YAML (Configuration)
-
-Jupyter Notebook (Demonstration)
-
-VS Code (Development)
-
-📁 Project Structure
+```bash
 hdb_etl/
 ├── config/
 │   └── config.yaml
@@ -61,11 +62,11 @@ Execute cells sequentially.
 
 📥 Data Extraction
 
-Data is extracted via API-based ingestion from data.gov.sg
+API-based ingestion from data.gov.sg
 
 No manual download required
 
-Supports retry and polling for large datasets
+Includes retry & polling for large datasets
 
 🧹 Data Quality & Cleaning
 Validation Rules
@@ -78,18 +79,16 @@ Non-null critical fields
 
 Cleaning Steps
 
-Standardization (uppercase categories)
+Standardization (uppercase categorical fields)
 
 Duplicate removal using composite key
 
 Retain highest resale price
 
 🧮 Transformation Logic
-Resale Identifier Format:
+Resale Identifier Format
 S + Block(3 digits) + Price Prefix + Month + Town Initial
-
-Example:
-
+Example
 S1232301A
 🔐 Hashing
 
@@ -124,7 +123,7 @@ Modular pipeline (separation of concerns)
 
 Idempotent execution (skip logic)
 
-Logging-enabled for debugging
+Logging-enabled for traceability
 
 📌 Assumptions
 
@@ -144,12 +143,13 @@ Strong consistency across towns and flat types
 
 📬 Submission Notes
 
-Pipeline is fully automated
+Fully automated pipeline (no manual intervention)
 
-Notebook demonstrates execution and outputs
+Notebook included for step-by-step execution
 
 Designed with production best practices
 
-👨‍💻 Author : Vijayaelakya
+👨‍💻 Author
 
-Developed as part of HDB Data Engineer Technical Assessment
+Vijayaelakya
+HDB Senior Data Engineer Technical Assessment
