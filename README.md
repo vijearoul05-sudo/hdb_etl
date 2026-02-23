@@ -48,6 +48,7 @@ hdb_etl/
 
 🔄 Pipeline Flow
 Raw → Combined → Validated → Cleaned → Transformed → Hashed → Anomalies
+
 🚀 How to Run
 1. Install dependencies
 pip install pandas requests pyyaml matplotlib
@@ -56,7 +57,6 @@ python main.py
 3. Run via Notebook
 
 Open:
-
 notebooks/hdb_pipeline.ipynb
 
 Execute cells sequentially.
@@ -150,8 +150,7 @@ Notebook included for step-by-step execution
 
 Designed with production best practices
 
-👨‍💻 Author
-
-Vijayaelakya
+👨‍💻 Author : Vijayaelakya
 HDB Senior Data Engineer Technical Assessment
+
 
