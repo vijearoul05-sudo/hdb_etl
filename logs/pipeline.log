@@ -1,0 +1,23 @@
+2026-02-23 15:49:58,429 - INFO - ===== PIPELINE START =====
+2026-02-23 15:49:58,430 - INFO - Skipping combine
+2026-02-23 15:49:58,432 - INFO - Skipping validation
+2026-02-23 15:49:58,433 - INFO - Skipping cleaning
+2026-02-23 15:49:58,434 - INFO - Skipping transformation
+2026-02-23 15:49:58,435 - INFO - Skipping hashing
+2026-02-23 15:49:58,437 - INFO - Skipping anomaly detection
+2026-02-23 15:49:58,438 - INFO - ===== PIPELINE COMPLETE =====
+2026-02-23 15:57:23,550 - INFO - ===== PIPELINE START =====
+2026-02-23 15:57:23,551 - INFO - Reading data/raw\resale_1990_1999.csv.csv
+2026-02-23 15:57:23,839 - INFO - Reading data/raw\resale_2000_2012.csv.csv
+2026-02-23 15:57:24,127 - INFO - Reading data/raw\resale_2012_2014.csv.csv
+2026-02-23 15:57:24,194 - INFO - Reading data/raw\resale_2015_2016.csv.csv
+2026-02-23 15:57:24,264 - INFO - Reading data/raw\resale_2017_onwards.csv.csv
+2026-02-23 15:57:24,487 - INFO - Reading data/raw\Resale_Flat_Prices_Based_on_Registration_Date_From_Jan_2015_to_Dec_2016.csv
+2026-02-23 15:57:24,541 - INFO - Reading data/raw\Resale_Flat_Prices_Based_on_Registration_Date_From_Mar_2012_to_Dec_2014.csv
+2026-02-23 15:57:25,328 - INFO - Combine completed
+2026-02-23 15:57:31,886 - INFO - Valid: 181900, Failed: 0
+2026-02-23 15:57:32,947 - INFO - Cleaning completed
+2026-02-23 15:57:33,733 - INFO - Transformation completed
+2026-02-23 15:57:34,723 - INFO - Hashing completed
+2026-02-23 15:57:34,888 - INFO - Anomalies: 2877
+2026-02-23 15:57:34,896 - INFO - ===== PIPELINE COMPLETE =====

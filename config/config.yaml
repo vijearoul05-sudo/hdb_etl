@@ -1,0 +1,33 @@
+collection:
+  id: 189
+  metadata_url: "https://api-production.data.gov.sg/v2/public/api"
+
+dataset_api:
+  base_url: "https://api-open.data.gov.sg/v1/public/api/datasets"
+
+paths:
+  raw: "data/raw"
+  combined: "data/combined/master_dataset.csv"
+  validated: "data/cleaned/validated.csv"
+  cleaned: "data/cleaned/final_cleaned.csv"
+  transformed: "data/transformed/transformed.csv"
+  hashed: "data/hashed/hashed.csv"
+  anomalies: "data/failed/anomalies.csv"
+  failed_validation: "data/failed/validation_failed.csv"
+  logs: "logs/pipeline.log"
+
+pipeline:
+  skip_if_exists: false
+
+extraction:
+  keywords:
+    - ["Registration Date", "Mar 2012", "Dec 2014"]
+    - ["Registration Date", "Jan 2015", "Dec 2016"]
+
+  polling:
+    attempts: 10
+    interval_seconds: 3
+
+  retry:
+    max_retries: 5
+    wait_seconds: 5
