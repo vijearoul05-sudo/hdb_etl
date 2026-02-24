@@ -45,9 +45,10 @@ hdb_etl/
 │   └── utils.py
 ├── main.py
 └── README.md
-🔄 Pipeline Flow
+```
+## 🔄 Pipeline Flow
 Raw → Combined → Validated → Cleaned → Transformed → Hashed → Anomalies
-🚀 How to Run
+## 🚀 How to Run
 1. Install dependencies
 pip install pandas requests pyyaml matplotlib
 2. Run full pipeline
@@ -60,7 +61,7 @@ notebooks/HDB_ETL_Jupyter.ipynb
 
 Execute cells sequentially.
 
-📥 Data Extraction
+## 📥 Data Extraction
 
 API-based ingestion from data.gov.sg
 
@@ -68,7 +69,7 @@ No manual download required
 
 Includes retry & polling for large datasets
 
-🧹 Data Quality & Cleaning
+## 🧹 Data Quality & Cleaning
 Validation Rules
 
 Valid date format
@@ -85,12 +86,12 @@ Duplicate removal using composite key
 
 Retain highest resale price
 
-🧮 Transformation Logic
+## 🧮 Transformation Logic
 Resale Identifier Format
 S + Block(3 digits) + Price Prefix + Month + Town Initial
 Example
 S1232301A
-🔐 Hashing
+## 🔐 Hashing
 
 Algorithm: SHA-256
 
@@ -102,20 +103,20 @@ Uniqueness
 
 Data privacy
 
-📊 Anomaly Detection
+## 📊 Anomaly Detection
 
 Method: Interquartile Range (IQR)
 
 Identifies outliers in resale price
 
-📦 Outputs
+## 📦 Outputs
 Output Type	Description
 Raw	Original data
 Cleaned	Validated & deduplicated
 Transformed	With Resale Identifier
 Hashed	With hashed identifier
 Failed	Invalid + anomaly records
-🧠 Engineering Design
+## 🧠 Engineering Design
 
 Config-driven via YAML
 
@@ -125,7 +126,7 @@ Idempotent execution (skip logic)
 
 Logging-enabled for traceability
 
-📌 Assumptions
+## 📌 Assumptions
 
 HDB lease duration is 99 years
 
@@ -133,7 +134,7 @@ Composite key excludes resale price
 
 Dataset schema is consistent across files
 
-📈 Insights
+## 📈 Insights
 
 Majority of resale prices fall within expected IQR range
 
@@ -141,7 +142,7 @@ Minimal anomalies detected, indicating high data quality
 
 Strong consistency across towns and flat types
 
-📬 Submission Notes
+## 📬 Submission Notes
 
 Fully automated pipeline (no manual intervention)
 
