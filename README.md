@@ -55,9 +55,7 @@ pip install pandas requests pyyaml matplotlib
 python main.py
 3. Run via Notebook
 
-Open:
-
-notebooks/HDB_ETL_Jupyter.ipynb
+Open: notebooks/hdb_pipeline.ipynb
 
 Execute cells sequentially.
 
