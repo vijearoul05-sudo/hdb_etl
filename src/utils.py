@@ -1,10 +1,16 @@
 import yaml
+from pathlib import Path
 import logging
 import os
 
 
 def load_config(path="config/config.yaml"):
-    with open(path, "r") as f:
+    # Get project root (one level above src/)
+    project_root = Path(__file__).resolve().parent.parent
+
+    config_path = project_root / path
+
+    with open(config_path, "r") as f:
         return yaml.safe_load(f)
 
 
